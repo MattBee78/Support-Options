@@ -1,0 +1,15 @@
+# add list items in lowercase to avoid case problems following user input
+
+searchterm = input("What support do you require?").lower()
+Xsupport = ['question', 'crm password reset', 'timesheet']
+Ysupport = ['network password', 'excel','word']
+Zsupport = ['new software', 'other stuff']
+if searchterm in Xsupport :
+    print("Please contact Xsupport for support with", searchterm, " - 01234567890")
+elif searchterm in Ysupport:
+    print("Please contact Ysupport for help with", searchterm, " - 9876543210")
+elif searchterm in Zsupport:
+    print("Please contact Zsupport for help with", searchterm, " - 2468013579")
+
+else:
+    print("Sorry I don't recognise", searchterm, "please try wording it differently")
